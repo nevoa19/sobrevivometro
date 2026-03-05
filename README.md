@@ -1,10 +1,10 @@
-📚 Sobrevivômetro da Faculdade
+# 📚 Sobrevivômetro da Faculdade
 
 Um pequeno site feito para calcular quanto da faculdade você já sobreviveu.
 
 A ideia é simples: informar o curso, o número total de semestres e o semestre atual para visualizar o progresso da graduação de forma visual e motivadora.
 
-✨ Funcionalidades
+# ✨ Funcionalidades
 
 Cálculo automático do progresso da faculdade
 
@@ -14,7 +14,7 @@ Mensagens motivacionais baseadas no progresso
 
 Interface simples e responsiva (funciona bem no celular)
 
-📱 Como funciona
+# 📱 Como funciona
 
 O usuário informa:
 
@@ -36,7 +36,7 @@ barra de progresso
 
 mensagem motivacional
 
-🖥️ Tecnologias utilizadas
+# 🖥️ Tecnologias utilizadas
 
 HTML
 
@@ -46,26 +46,26 @@ JavaScript
 
 O projeto foi desenvolvido como um site estático simples, sem necessidade de backend.
 
-🚀 Como executar o projeto
+# 🚀 Como executar o projeto
 
 Baixe ou clone este repositório
 
 Abra o arquivo index.html no navegador.
 
-📂 Estrutura do projeto
+# 📂 Estrutura do projeto
 
-sobrevivometro
+sobrevivometro                                      
 │                                                   
 ├── index.html                              
 └── README.md
 
-💡 Ideia do projeto
+# 💡 Ideia do projeto
 
 Esse projeto nasceu como uma forma divertida de representar o progresso dentro da faculdade, algo que muitos estudantes gostam de visualizar.
 
 Além de ser uma pequena ferramenta útil, também serve como um exemplo simples de aplicação web com HTML, CSS e JavaScript.
 
-🧠 Possíveis melhorias
+# 🧠 Possíveis melhorias
 
 adicionar modo escuro
 
@@ -77,6 +77,6 @@ transformar em PWA para instalar no celular
 
 permitir compartilhar progresso
 
-📄 Licença
+# 📄 Licença
 
 Projeto livre para estudo e modificação.
