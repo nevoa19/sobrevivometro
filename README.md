@@ -55,8 +55,8 @@ Abra o arquivo index.html no navegador.
 📂 Estrutura do projeto
 
 sobrevivometro
-│
-├── index.html
+│                                                   
+├── index.html                              
 └── README.md
 
 💡 Ideia do projeto
