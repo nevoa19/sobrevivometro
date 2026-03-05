@@ -53,7 +53,8 @@ Baixe ou clone este repositório
 Abra o arquivo index.html no navegador.
 
 📂 Estrutura do projeto
-sobrevivometro-faculdade
+
+sobrevivometro
 │
 ├── index.html
 └── README.md
