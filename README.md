@@ -57,6 +57,7 @@ sobrevivometro-faculdade
 │
 ├── index.html
 └── README.md
+
 💡 Ideia do projeto
 
 Esse projeto nasceu como uma forma divertida de representar o progresso dentro da faculdade, algo que muitos estudantes gostam de visualizar.
