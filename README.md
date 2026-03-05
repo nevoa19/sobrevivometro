@@ -50,8 +50,6 @@ O projeto foi desenvolvido como um site estático simples, sem necessidade de ba
 
 Baixe ou clone este repositório
 
-git clone https://github.com/seuusuario/sobrevivometro-faculdade.git
-
 Abra o arquivo index.html no navegador.
 
 📂 Estrutura do projeto
