@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobrevivômetro da Faculdade</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    text-align:center;
+    padding:40px;
+    color:#333;
+}
+
+.container{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    max-width:350px;
+    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#ff6b81;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.progress{
+    background:#eee;
+    border-radius:20px;
+    margin-top:20px;
+    height:25px;
+    overflow:hidden;
+}
+
+.bar{
+    height:100%;
+    width:0%;
+    background:#ff6b81;
+    transition:0.5s;
+}
+
+.result{
+    margin-top:20px;
+    font-size:16px;
+}
+
+.footer{
+    margin-top:25px;
+    font-size:12px;
+    opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📚 Sobrevivômetro da Faculdade</h2>
+
+<input id="curso" placeholder="Seu curso">
+
+<input id="total" type="number" placeholder="Total de semestres">
+
+<input id="atual" type="number" placeholder="Semestre atual">
+
+<br><br>
+
+<button onclick="calcular()">Calcular progresso</button>
+
+<div class="progress">
+<div class="bar" id="bar"></div>
+</div>
+
+<div class="result" id="resultado"></div>
+
+<div class="footer">
+feito com carinho pra te lembrar que você consegue ✨
+</div>
+
+</div>
+
+<script>
+
+function calcular(){
+
+let curso = document.getElementById("curso").value
+let total = document.getElementById("total").value
+let atual = document.getElementById("atual").value
+
+let progresso = (atual/total)*100
+progresso = progresso.toFixed(1)
+
+document.getElementById("bar").style.width = progresso + "%"
+
+let msg=""
+
+if(progresso < 25){
+msg="O começo da faculdade é caos puro, mas você tá indo bem."
+}
+else if(progresso < 50){
+msg="Você já passou da fase inicial. Sobrevivendo bem."
+}
+else if(progresso < 75){
+msg="Metade vencida. Orgulho de você."
+}
+else if(progresso < 100){
+msg="Agora ninguém te segura. Tá quase lá."
+}
+else{
+msg="FORMAAAAAOU. Lenda da sobrevivência acadêmica."
+}
+
+document.getElementById("resultado").innerHTML = 
+`
+<b>${curso}</b><br><br>
+${progresso}% concluído<br><br>
+${msg}
+`
+
+}
+
+</script>
+
+</body>
+</html>
